@@ -6,5 +6,6 @@ app.get('/', (req, res) => {
 })
     .use('/estudiantes', require('./estudiantes/nombres'))
     .use('/materias', require('./materias/pensum'))
+    .use('/nombres', require('./estudiantes/nombres'))
 
 module.exports = app
